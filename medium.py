@@ -1,11 +1,8 @@
-price = eval(input("Item Price --> "))
-quan = eval(input("Quantity --> "))
+#Multiplication Table
 
-total = price * quan
+col = eval(input("Enter number of columns ---> "))
 
-if total >= 100:
-	discount = total * 0.10
-	new_total = total - discount
-	print("The discount has been applied", discount , "Your new total is", new_total)
-else:
-	print("Discount is not applicable, ORIGINAL PRICE" , total)
+for i in range(1,11,1):
+    for k in range(1,col+1,1):
+        print(f"{i}x{k}={i*k}",end="\t\t")
+    print()
