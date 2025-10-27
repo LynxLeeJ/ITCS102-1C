@@ -14,3 +14,4 @@ print(new_list)
 
 new_list.sort() 
 print(new_list)
+print(fullname [ 0 : 4 ])
